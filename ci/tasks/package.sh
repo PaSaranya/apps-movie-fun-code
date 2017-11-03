@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e +x
-
+apt-get update && apt-get install -y mvn
 pushd movie—fun-source
   echo "Packaging WAR"
   ./mvnw clean package -DskipTests
