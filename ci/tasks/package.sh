@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e +x
-apt-get update && apt-get install -y mvn
+apt-get install maven
 pushd movie—fun-source
   echo "Packaging WAR"
   ./mvnw clean package -DskipTests
