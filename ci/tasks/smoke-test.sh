@@ -2,6 +2,7 @@
 
 set -ex
 apt-get update && apt-get install -y curl
+apt-get update && apt-get install -y maven
 if [ -z $MOVIE_SERVICE_URL ]; then
   echo "MOVIE_SERVICE_URL not set"
   exit 1
