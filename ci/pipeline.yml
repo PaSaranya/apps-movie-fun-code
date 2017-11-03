@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     uri: https://github.com/PaSaranya/apps-movie-fun-code.git  #<---- REPLACE ME
-    branch: master
+    branch: spring-boot
 
 - name: deploy-movie—fun
   type: cf
