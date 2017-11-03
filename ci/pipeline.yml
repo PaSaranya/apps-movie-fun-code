@@ -39,6 +39,6 @@ jobs:
   - task: smoke_test
     file: movie—fun-source/ci/tasks/smoke-test.yml
     params:
-      MOVIE_SERVICE_URL: https://movie-fun-devotional-khansamah.apps.cumuluslabs.io
+      MOVIE_SERVICE_URL: http://movie-fun-devotional-khansamah.apps.cumuluslabs.io
 
 
