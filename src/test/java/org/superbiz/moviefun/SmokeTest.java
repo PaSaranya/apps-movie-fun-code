@@ -31,7 +31,7 @@ public class SmokeTest {
     }
 
     private String url(String path) {
-        String baseUrl = $MOVIE_SERVICE_URL;
+        String baseUrl = "http://localhost:8080";
         String envUrl = System.getenv("MOVIE_FUN_URL");
 
         if (envUrl != null && !envUrl.isEmpty()) {
