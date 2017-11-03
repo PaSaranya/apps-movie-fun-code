@@ -1,10 +1,10 @@
 #!/bin/bash
 
 set -e +x
-sudo apt-get install maven
+apt-get update && apt-get install -y maven
 pushd movie—fun-source
   echo "Packaging WAR"
-  ./mvnw clean package -DskipTests
+  mvn clean package -DskipTests
 popd
 
 war_count=`find movie—fun-source/target -type f -name *.war | wc -l`
