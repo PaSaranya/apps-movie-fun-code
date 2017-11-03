@@ -9,7 +9,7 @@ fi
 
 pushd movie—fun-source
   echo "Running smoke tests for movie fun Service deployed at $MOVIE_SERVICE_URL"
-  $MOVIE_SERVICE_URL mvn test
+  /src/test/java/org/superbiz/moviefun $MOVIE_SERVICE_URL
 popd
 
 exit 0
