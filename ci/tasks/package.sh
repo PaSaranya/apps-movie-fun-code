@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e +x
-apt-get install maven
+sudo apt-get install maven
 pushd movie—fun-source
   echo "Packaging WAR"
   ./mvnw clean package -DskipTests
